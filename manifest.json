@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "OI Highlighter + 3\u2011min Screenshots (IO fixed)",
+  "version": "1.1.1",
+  "description": "Injects the OI highlighter and saves screenshots to Downloads/screept_shot/{IO}/HH-mm.png.",
+  "action": {
+    "default_title": "OI Highlighter",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "scripting",
+    "activeTab",
+    "tabs",
+    "downloads",
+    "alarms",
+    "storage"
+  ],
+  "host_permissions": [
+    "<all_urls>"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  }
+}
